@@ -1,14 +1,15 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Header } from "../components/header/header";
+import { MainBlock } from "../components/mainBlock/mainBock";
 
 export function MainPage() {
   return (
     <Container fluid="true">
       <Header />
-      <div className="bg-light bg-gradient vh-100 wh-150">
+      <div className="bg-light bg-gradient vh-300 wh-150">
         <Container>
-          <Button variant="secondary">lalalala</Button>
+          <MainBlock />
         </Container>
       </div>
     </Container>
