@@ -17,7 +17,7 @@ body {
     height: 100%;
     font-family: 'Stratos-Thin', sans-serif;
     color: #000;
-    overflow: hidden;
+    overflow-y: scroll
 
 }
 
