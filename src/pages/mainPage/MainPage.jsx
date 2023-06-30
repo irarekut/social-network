@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Header } from "../components/header/header";
-import { MainBlock } from "../components/mainBlock/mainBock";
+import { PostsBlock } from "../components/postsBock/postsBock";
 
 export function MainPage() {
   return (
@@ -9,7 +9,7 @@ export function MainPage() {
       <Header />
       <div className="bg-light bg-gradient vh-300 wh-150">
         <Container>
-          <MainBlock />
+          <PostsBlock />
         </Container>
       </div>
     </Container>

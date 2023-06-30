@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Container, Image } from "react-bootstrap";
 import * as S from "./styled";
 
-export const MainBlock = () => {
+export const PostsBlock = () => {
   const [commentsVisible, setCommentsVisible] = useState(false);
   const HandleClickComments = () => {
     setCommentsVisible(!commentsVisible);
   };
   return (
-    <Container className="d-flex flex-wrap  justify-content-evenly row gy-5 mt-1">
+    <Container className="d-flex flex-wrap  justify-content-evenly row gy-5 mt-1 pt-5">
       <S.blockPost>
         <Image
           style={{ width: "50px", height: "50px" }}
