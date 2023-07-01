@@ -13,4 +13,6 @@ export const name = styled.h2``;
 
 export const titleInfo = styled.h4``;
 
-export const text = styled.div``;
+export const text = styled.div`
+  width: 600px;
+`;

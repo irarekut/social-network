@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Header } from "../components/header/header";
-import { AboutUserBlock } from "../components/aboutUserBlock/aboutUserBlock";
+import { Header } from "../../components/header/header";
+import { AboutUserBlock } from "../../components/aboutUserBlock/aboutUserBlock";
 
 export function PersonalPage() {
   return (
@@ -11,6 +11,7 @@ export function PersonalPage() {
         <AboutUserBlock
           name="Ира Рекуть"
           info="Люблю читать, воспитываю кота или он меня, зависит от точки зрения."
+          isLoading="false"
         />
       </div>
     </Container>
