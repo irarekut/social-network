@@ -3,7 +3,11 @@ import { Container, Nav, Navbar, NavDropdown, Image } from "react-bootstrap";
 
 export const Header = () => {
   return (
-    <Navbar data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+    <Navbar
+      data-bs-theme="dark"
+      expand="lg"
+      className="bg-body-tertiary fixed-top"
+    >
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -19,8 +23,8 @@ export const Header = () => {
                 <div>ira@gmail.com</div>
               </div>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/">Главная</NavDropdown.Item>
-              <NavDropdown.Item href="personal">Моя страница</NavDropdown.Item>
+              <NavDropdown.Item href="/">Список постов</NavDropdown.Item>
+              <NavDropdown.Item href="personal">Обо мне</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
