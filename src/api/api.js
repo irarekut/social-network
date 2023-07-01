@@ -7,13 +7,24 @@ export const apiSlice = createApi({
   }),
   endpoints: (builder) => ({
     getPosts: builder.query({
-      query: () => `/users/1/posts`,
+      query: () => `/posts`,
     }),
     getComments: builder.query({
-      query: () => "/posts/1/comments",
+      query: (id) => `/posts/${id}/comments`,
+    }),
+    getUserPosts: builder.query({
+      query: (id) => `/users/${id}/posts`,
+    }),
+    getUser: builder.query({
+      query: (id) => `/users/${id}`,
     }),
   }),
   tagTypes: ["Post"],
 });
 
-export const { useGetPostsQuery, useGetCommentsQuery } = apiSlice;
+export const {
+  useGetPostsQuery,
+  useGetCommentsQuery,
+  useGetUserPostsQuery,
+  useGetUserQuery,
+} = apiSlice;

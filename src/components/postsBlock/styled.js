@@ -14,6 +14,8 @@ export const blockPost = styled.div`
 
 export const titlePost = styled.h3``;
 
+export const linkPost = styled.a``;
+
 export const containerPost = styled.div`
   display: flex;
   gap: 20px;
@@ -21,22 +23,6 @@ export const containerPost = styled.div`
 `;
 
 export const textPost = styled.div``;
-
-export const containerComments = styled.div``;
-
-export const titleComments = styled.h5`
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-`;
-
-export const blockComments = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const comment = styled.div``;
 
 export const containerSpinner = styled.div`
   display: flex;
