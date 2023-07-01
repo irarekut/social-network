@@ -37,3 +37,9 @@ export const blockComments = styled.div`
 `;
 
 export const comment = styled.div``;
+
+export const containerSpinner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
