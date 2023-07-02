@@ -1,12 +1,13 @@
 import React from "react";
-import { Container, NavItem, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { Header } from "../../components/header/header";
+import { MiddleMainPageBlock } from "../../components/middleMainPageBlock/middleMainPageBlock";
 
-export function Main() {
+export function MainPage() {
   return (
-    <Container fluid="true">
-      <Navbar>
-        <NavItem>lalalal</NavItem>
-      </Navbar>
+    <Container className="mb-5" fluid="true">
+      <Header />
+      <MiddleMainPageBlock />
     </Container>
   );
 }
