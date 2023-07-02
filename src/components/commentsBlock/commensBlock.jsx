@@ -14,8 +14,10 @@ export const CommentsBlock = (props) => {
   const { data, isLoading } = useGetCommentsQuery(props.postId);
 
   useEffect(() => {
-    setComments(data);
-    setIsComments(isLoading);
+    setTimeout(() => {
+      setComments(data);
+      setIsComments(isLoading);
+    }, 5000);
   }, [data]);
 
   return (

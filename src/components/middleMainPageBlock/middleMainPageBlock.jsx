@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useGetPostsQuery } from "../../api/api";
-import { Container } from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import { PostsBlock } from "../postsBlock/postsBlock";
 import { PaginationBlock } from "../pagination.jsx/pagination";
 
@@ -13,8 +13,10 @@ export const MiddleMainPageBlock = () => {
   const { data, isLoading } = useGetPostsQuery();
 
   useEffect(() => {
-    setDataPosts(data);
-    setLoading(isLoading);
+    setTimeout(() => {
+      setDataPosts(data);
+      setLoading(isLoading);
+    }, 5000);
   }, [data]);
 
   const lastPostIndex = currentPage * postsPerPage;
@@ -41,21 +43,30 @@ export const MiddleMainPageBlock = () => {
   };
 
   return (
-    <div style={{ minHeight: "100vh" }} className="bg-light bg-gradient wh-150">
-      <Container>
-        <PostsBlock
-          data={currentPosts}
-          isLoading={loading}
-          isLoadingUser={false}
-        />
-        <PaginationBlock
-          postsPerPage={postsPerPage}
-          totalPosts={totalPosts || 1}
-          paginate={paginate}
-          nextPage={nextPage}
-          prevPage={prevPage}
-        />
-      </Container>
-    </div>
+    <Container
+      style={{ minHeight: "100vh" }}
+      className="bg-light bg-gradient wh-150"
+    >
+      {loading === false ? (
+        <Container>
+          <PostsBlock
+            data={currentPosts}
+            isLoading={loading}
+            isLoadingUser={false}
+          />
+          <PaginationBlock
+            postsPerPage={postsPerPage}
+            totalPosts={totalPosts || 1}
+            paginate={paginate}
+            nextPage={nextPage}
+            prevPage={prevPage}
+          />
+        </Container>
+      ) : (
+        <Container className="d-flex mt-5 justify-content-center">
+          <Spinner className="mt-5" animation="grow" variant="info" />
+        </Container>
+      )}
+    </Container>
   );
 };

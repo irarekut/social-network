@@ -7,13 +7,13 @@ export function PersonalPage() {
   return (
     <Container fluid="true">
       <Header />
-      <div className="bg-light bg-gradient vh-100 wh-200">
+      <Container className="bg-light bg-gradient vh-100 wh-200">
         <AboutUserBlock
           name="Ира Рекуть"
           info="Люблю читать, воспитываю кота или он меня, зависит от точки зрения."
           isLoading="false"
         />
-      </div>
+      </Container>
     </Container>
   );
 }
