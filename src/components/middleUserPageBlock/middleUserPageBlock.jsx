@@ -15,16 +15,20 @@ export const MiddleUserPageBlock = (props) => {
   );
 
   useEffect(() => {
-    if (typeof data !== "undefined") {
-      setDataPosts(data);
-      setIsLoadingPosts(isLoading);
-    }
+    setTimeout(() => {
+      if (typeof data !== "undefined") {
+        setDataPosts(data);
+        setIsLoadingPosts(isLoading);
+      }
+    }, 5000);
   }, [data]);
   useEffect(() => {
-    if (typeof dataUser !== "undefined") {
-      setUser(dataUser);
-      setIsUser(isLoadingUser);
-    }
+    setTimeout(() => {
+      if (typeof dataUser !== "undefined") {
+        setUser(dataUser);
+        setIsUser(isLoadingUser);
+      }
+    }, 5000);
   }, [dataUser]);
   return (
     <Container>
