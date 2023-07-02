@@ -1,8 +1,8 @@
 import { React } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Main } from "./pages/mainPage/MainPage";
-import { PersonalPage } from "./pages/personalPage/personalPage";
 import { UserPage } from "./pages/userPage/userPage";
+import { PersonalPage } from "./pages/personalPage/personalPage";
 
 export function AppRoutes() {
   return (

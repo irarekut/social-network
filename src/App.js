@@ -1,6 +1,6 @@
 import React from "react";
-import { GlobalStyle } from "./GlobalStyle";
 import { BrowserRouter as Router } from "react-router-dom";
+import { GlobalStyle } from "./GlobalStyle";
 import { AppRoutes } from "./routes";
 
 function App() {
