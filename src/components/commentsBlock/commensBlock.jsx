@@ -18,7 +18,7 @@ export const CommentsBlock = (props) => {
       setComments(data);
       setIsComments(isLoading);
     }, 5000);
-  }, [data]);
+  }, [data, isLoading]);
 
   return (
     <S.containerComments>

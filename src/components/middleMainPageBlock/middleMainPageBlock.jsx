@@ -17,7 +17,7 @@ export const MiddleMainPageBlock = () => {
       setDataPosts(data);
       setLoading(isLoading);
     }, 5000);
-  }, [data]);
+  }, [data, isLoading]);
 
   const lastPostIndex = currentPage * postsPerPage;
   const firstPostIndex = lastPostIndex - postsPerPage;
