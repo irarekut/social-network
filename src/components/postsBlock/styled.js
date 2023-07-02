@@ -23,9 +23,3 @@ export const containerPost = styled.div`
 `;
 
 export const textPost = styled.div``;
-
-export const containerSpinner = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
