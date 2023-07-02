@@ -21,7 +21,7 @@ export const MiddleUserPageBlock = (props) => {
         setIsLoadingPosts(isLoading);
       }
     }, 5000);
-  }, [data]);
+  }, [data, isLoading]);
   useEffect(() => {
     setTimeout(() => {
       if (typeof dataUser !== "undefined") {
@@ -29,7 +29,7 @@ export const MiddleUserPageBlock = (props) => {
         setIsUser(isLoadingUser);
       }
     }, 5000);
-  }, [dataUser]);
+  }, [dataUser, isLoadingUser]);
   return (
     <Container>
       <Button
