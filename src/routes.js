@@ -9,7 +9,7 @@ export function AppRoutes() {
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/personal" element={<PersonalPage />} />
-      <Route path="/user" element={<UserPage />} />
+      <Route path="/user/:id" element={<UserPage />} />
     </Routes>
   );
 }

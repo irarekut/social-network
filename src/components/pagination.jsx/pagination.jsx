@@ -7,7 +7,6 @@ export const PaginationBlock = (props) => {
   for (let i = 1; i <= Math.ceil(props.totalPosts / props.postsPerPage); i++) {
     pageNumbers.push(i);
   }
-  console.log(pageNumbers);
   return (
     <Container className="d-flex justify-content-center mt-5">
       <Pagination>
