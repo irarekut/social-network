@@ -3,7 +3,7 @@
  Финальный результат этого задания - реализация приложения, с отображением постов, комментариев и аватарки. 
  Описание проекта c пояснениями доступно [здесь](https://docs.google.com/document/d/1t0XQdIRmHSMfl7dcYuEy1ZwsCy6RqPGECyHZcddyvBg/edit).
 
-Deploy [здесь](https://genuine-cascaron-3c1575.netlify.app/
+Deploy [здесь](https://stately-cupcake-d73548.netlify.app/)
 ).
 
 ### Состав проекта
