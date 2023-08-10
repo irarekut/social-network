@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Agdasima&pause=1000&color=1527F7&center=true&multiline=true&width=435&lines=Дипломная+работа+PostsSPA!)
+## Приложение для отображения постов и комментариев к ним с фейкового API.
+ Финальный результат этого задания - реализация приложения, с отображением постов, комментариев и аватарки. 
+ Описание проекта c пояснениями доступно [здесь](https://docs.google.com/document/d/1t0XQdIRmHSMfl7dcYuEy1ZwsCy6RqPGECyHZcddyvBg/edit).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deploy [здесь](https://genuine-cascaron-3c1575.netlify.app/
+).
 
-## Available Scripts
+### Состав проекта
+***
+Проект состоит из двух частей: бэкенд и фронтенд.
+#### Бэкенд
+Бекэнд: [PostsSPA](https://jsonplaceholder.typicode.com/guide/).
+#### Основные возможности бэкенда:
+- Создание ресурса
+- Получение списка всех ресурсов
+- Добавление ресурса
+- Редактирование ресурса
+- Удаление ресурса
+- Доступна фильтрация
+- Также есть вложенные маршруты(
+- сообщения/1/комментарии
+  альбомы/1/фотографии
+  пользователи/1/альбомы
+  пользователи/1/задачи
+  пользователи/1/сообщения)
+### Список экранов проекта 
+***
+#### Фронтенд
 
-In the project directory, you can run:
+#### Главный экран
+Главный экран, на котором отражаются все посты и меню навигации.
 
-### `npm start`
+#### Экран 'Обо мне'
+На этом экране отображается информация о разработчике.
+#### Экран подробности о пользователе
+Здесь отображаются данные пользователя которому принадлежит данный пост и список его постов.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## _Запуск проекта_
+***
+1. Склонируйте репозиторий:
+```
+$ git clone https://github.com/SergeyHak/PostsSPA
+```
+2. Установите зависимости:
+```
+$ npm i
+```
+3. Запустите проект:
+```
+$ npm start
+```
+### Разработчик проекта
+***
+[![Opera](https://img.shields.io/badge/irarekut-000?style=for-the-badge&logo=ghost&logoColor=%23F7DF1E)](https://github.com/irarekut)
